@@ -1,11 +1,22 @@
-/* =========================================
-   PINK THEME — DIMENSION (HTML5 UP)
-   Customized for Searra Foote
-   ========================================= */
-
-/* Fonts */
+/* This is where the Font Awesome fonts come from */
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+
+/*
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Modified with a professional pink color palette
+	Layout and structure unchanged
+*/
+
+/* ===== Pink Theme Variables (SAFE) ===== */
+:root {
+	--bg-main: #1b1f22;                 /* original dark */
+	--text-main: #fff5f8;               /* soft pink-white */
+	--accent-main: #ec4899;             /* rose */
+	--accent-soft: #fbcfe8;             /* blush */
+	--border-main: rgba(236,72,153,0.6);
+}
 
 /* Reset */
 html, body, div, span, applet, object,
@@ -22,164 +33,139 @@ section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
 
-article, aside, footer, header, nav, section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
 body {
 	line-height: 1;
-	background: #fff1f6;
-	font-family: "Source Sans Pro", sans-serif;
-	color: #4a1d2e;
+	background: var(--bg-main);
+	-webkit-text-size-adjust: none;
+}
+
+body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+	animation: none !important;
+	transition: none !important;
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
-	color: #9d174d;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 0.25rem;
+html { font-size: 16pt; }
+
+body, input, select, textarea {
+	color: var(--text-main);
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 300;
+	line-height: 1.65;
 }
 
-h1.major, h2.major {
-	border-bottom: solid 1px #ec4899;
-}
-
-p {
-	margin-bottom: 2rem;
-}
-
-/* Links */
 a {
-	color: #ec4899;
+	border-bottom: dotted 1px var(--border-main);
+	color: var(--accent-main);
 	text-decoration: none;
-	border-bottom: dotted 1px rgba(236, 72, 153, 0.5);
-	transition: color 0.2s ease;
+	transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 }
 
 a:hover {
-	color: #f472b6;
 	border-bottom-color: transparent;
+	color: var(--accent-soft);
 }
 
-/* Strong */
 strong, b {
-	color: #9d174d;
+	color: #fce7f3;
 	font-weight: 600;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	color: #fce7f3;
+	font-weight: 600;
+	line-height: 1.5;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	margin: 0 0 1rem 0;
+}
+
+h1.major, h2.major, h3.major {
+	border-bottom: solid 1px var(--border-main);
+	padding-bottom: 0.5rem;
+	margin-bottom: 2rem;
+	width: max-content;
+}
+
 /* Header */
-#header {
-	text-align: center;
+#header > *:before {
+	background: var(--border-main);
+}
+
+#header .logo {
+	border: solid 1px var(--border-main);
 }
 
 #header .content {
-	border-top: 1px solid #ec4899;
-	border-bottom: 1px solid #ec4899;
-}
-
-#header .content .inner {
-	padding: 3rem 2rem;
+	border-top: 1px solid var(--border-main);
+	border-bottom: 1px solid var(--border-main);
 }
 
 #header nav ul {
-	display: flex;
-	border: 1px solid #ec4899;
-	border-radius: 6px;
+	border: solid 1px var(--border-main);
 }
 
 #header nav ul li {
-	border-left: 1px solid #ec4899;
-}
-
-#header nav ul li:first-child {
-	border-left: none;
-}
-
-#header nav ul li a {
-	color: #9d174d;
-	padding: 0 1.25rem;
-	height: 2.75rem;
-	line-height: 2.75rem;
+	border-left: solid 1px var(--border-main);
 }
 
 #header nav ul li a:hover {
-	background-color: #fbcfe8;
+	background-color: rgba(236,72,153,0.15);
 }
 
 /* Main cards */
 #main article {
-	background-color: rgba(255, 240, 246, 0.95);
-	border-radius: 8px;
-	padding: 4rem 2.5rem 1.5rem;
-	box-shadow: 0 20px 40px rgba(236, 72, 153, 0.15);
-	color: #4a1d2e;
+	background-color: rgba(36, 15, 23, 0.9);
+	border-radius: 4px;
+	color: var(--text-main);
 }
 
 /* Close button */
 #main article .close:before {
-	background-color: #fbcfe8;
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cline x1='2' y1='2' x2='18' y2='18' stroke='%239d174d'/%3E%3Cline x1='18' y1='2' x2='2' y2='18' stroke='%239d174d'/%3E%3C/svg%3E");
-	background-repeat: no-repeat;
-	background-position: center;
-	border-radius: 50%;
-}
-
-#main article .close:hover:before {
-	background-color: #f9a8d4;
-}
-
-/* Images */
-.image:before {
-	background-color: rgba(236, 72, 153, 0.15);
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20px' height='20px'%3E%3Cline x1='2' y1='2' x2='18' y2='18' stroke='%23fce7f3'/%3E%3Cline x1='18' y1='2' x2='2' y2='18' stroke='%23fce7f3'/%3E%3C/svg%3E");
 }
 
 /* Icons */
 ul.icons li a {
-	box-shadow: inset 0 0 0 1px #ec4899;
-	color: #ec4899;
+	box-shadow: inset 0 0 0 1px var(--border-main);
 }
 
 ul.icons li a:hover {
-	background-color: #fbcfe8;
+	background-color: rgba(236,72,153,0.15);
 }
 
 /* Buttons */
-button,
-.button {
-	border: 1px solid #ec4899;
-	color: #9d174d !important;
-	background: transparent;
+button, .button {
+	box-shadow: inset 0 0 0 1px var(--border-main);
+	color: var(--text-main) !important;
 }
 
-button:hover,
-.button:hover {
-	background-color: #fbcfe8;
+button:hover, .button:hover {
+	background-color: rgba(236,72,153,0.15);
+}
+
+/* Background overlay */
+#bg:before {
+	background-image:
+		linear-gradient(
+			to top,
+			rgba(236,72,153,0.25),
+			rgba(236,72,153,0.25)
+		),
+		url("../../images/overlay.png");
 }
 
 /* Footer */
 #footer {
-	color: #9d174d;
-	font-size: 0.7rem;
-	opacity: 0.85;
+	color: #fce7f3;
 }
-
-/* Background */
-#bg:before {
-	background-image: linear-gradient(
-		to top,
-		rgba(255, 225, 236, 0.8),
-		rgba(255, 225, 236, 0.8)
-	),
-	url("../../images/overlay.png");
-}
-
-#bg:after {
-	background-image: url("../../images/bg.jpg");
-	filter: brightness(1.05) saturate(1.1);
-}
-
