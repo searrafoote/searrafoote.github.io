@@ -1710,7 +1710,34 @@ button {
     min-width: 0;
     padding: 0 0.5rem;
     text-align: center;
-    white-space: nowrap;/* =================================================
+    white-space: nowrap;
+}
+
+/* On tablets and phones, stack the buttons vertically so nothing gets cut off */
+@media screen and (max-width: 1150px) {
+    #header nav ul {
+        flex-direction: column;
+        width: auto;
+        min-width: 14rem;
+    }
+    #header nav ul li {
+        border-left: 0;
+        border-top: solid 1px #ffffff;
+    }
+    #header nav ul li:first-child {
+        border-top: 0;
+    }
+    #header nav ul li a {
+        height: 3rem;
+        line-height: 3rem;
+        width: 100%;
+    }
+    #header nav.use-middle:after {
+        display: none;
+    }
+}
+
+/* =================================================
    PRESENTATIONS GALLERY (photo grid with captions)
    ================================================= */
 .gallery {
@@ -1750,31 +1777,5 @@ button {
 @media screen and (max-width: 600px) {
     .gallery {
         grid-template-columns: 1fr;
-    }
-}
-	
-}
-
-/* On tablets and phones, stack the buttons vertically so nothing gets cut off */
-@media screen and (max-width: 1150px) {
-    #header nav ul {
-        flex-direction: column;
-        width: auto;
-        min-width: 14rem;
-    }
-    #header nav ul li {
-        border-left: 0;
-        border-top: solid 1px #ffffff;
-    }
-    #header nav ul li:first-child {
-        border-top: 0;
-    }
-    #header nav ul li a {
-        height: 3rem;
-        line-height: 3rem;
-        width: 100%;
-    }
-    #header nav.use-middle:after {
-        display: none;
     }
 }
