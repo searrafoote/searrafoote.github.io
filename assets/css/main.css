@@ -1710,7 +1710,49 @@ button {
     min-width: 0;
     padding: 0 0.5rem;
     text-align: center;
-    white-space: nowrap;
+    white-space: nowrap;/* =================================================
+   PRESENTATIONS GALLERY (photo grid with captions)
+   ================================================= */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   /* 2 photos per row */
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.gallery figure {
+    margin: 0;
+}
+
+.gallery img {
+    width: 100%;
+    aspect-ratio: 4 / 3;      /* every photo gets the same shape */
+    object-fit: cover;        /* crops instead of stretching */
+    border-radius: 4px;
+    display: block;
+}
+
+.gallery figcaption {
+    margin-top: 0.6rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.gallery figcaption b {
+    display: block;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+/* One photo per row on phones */
+@media screen and (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+	
 }
 
 /* On tablets and phones, stack the buttons vertically so nothing gets cut off */
