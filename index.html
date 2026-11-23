@@ -4,313 +4,289 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
-	<!-- 	This is the "Head" of the HTML document.
-		It contains information that isn't displayed on the actual page, but is useful
-		for the web browser when loading the page	
-	-->
+<html lang="en">
 	<head>
-		<!-- This is the title of the page. It is the text that appears inside this pages tab in your web browser -->
-		<title>AstroSites</title>
+		<!-- Text shown in the browser tab -->
+		<title>Searra Foote | Exoplanets &amp; Astrobiology</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!-- 	This links to this page's CSS, which is contained in the folder assets/css and the file main.css.
-			 If you want to edit the styling of this page, you should edit the file assets/css/main.css
-			 If you have a new CSS file you'd like to add with custom styling, you should link to it here using:
-			 <link rel="stylesheet" href="assets/css/my-new-css-file.css"/> 
-		-->
+		<!-- Short summary that search engines (Google) show under your site's name -->
+		<meta name="description" content="Searra Foote, PhD candidate at the Lunar and Planetary Laboratory, University of Arizona, studying exo-Earth detectability and atmospheric characterization for the Habitable Worlds Observatory." />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- 	In the case that the user's browser does not support JavaScript (unlikely, but possible), the page
-			will load a separate set of CSS stylings from the file assets/css/noscript.css
-			Any HTML contained inside <noscript></noscript> tags will be loaded in the event that JavaScript is not
-			available. 
-		-->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<!-- The body is the location where your site's content will go -->
 	<body class="is-preload">
 
-			<!-- This "div" wraps around all of our content and just changes how things are layed out -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-					<!-- This is where the content that appears on page load exists -->
-					<header id="header">
-						<!-- This is the main content of the front page -->
-						<div class="content">
-							<div class="inner">
-								<!-- Here is a heading where you can put your name -->
-								<h1>
-									Searra Foote
-								</h1>
-								<!-- 	Here is an image where you can put a picture of you. 
-									You can change the width and height attributes below to change how large
-									your image is.
+			<!-- ===================== FRONT PAGE ===================== -->
+			<header id="header">
+				<div class="content">
+					<div class="inner">
+						<h1>Searra Foote</h1>
 
-									Try adding "border-radius: 50%;" to the style attribute.
-								-->
-								<img src="images/SearraFooteheadshot.JPG" style="width:280px; height:400px; object-fit: cover;">
-								<!-- 	Here is a paragraph where you can put your position and institution, or
-									a short line about yourself.
-								-->
-								<p>
-									PhD Candidate <br> Lunar and Planetary Laboratory <br> University of Arizona
-								</p>
-								<!-- Here is a paragraph where you can put a link to your CV -->
-								<p>
-									<!-- Note you will want to change where this points to! -->
-									<a href="images/SearraFooteCV.pdf" target="_blank">Curriculum Vitae</a>
-								</p>
-							</div>
+						<!-- Headshot. Change width/height to resize; border-radius rounds the corners -->
+						<img src="images/SearraFooteheadshot.JPG" alt="Photo of Searra Foote"
+							style="width:280px; height:400px; object-fit: cover; border-radius: 6px; margin-bottom: 1.5rem;">
+
+						<p>
+							PhD Candidate <br> Lunar and Planetary Laboratory <br> University of Arizona
+						</p>
+						<p>
+							<a href="images/SearraFooteCV.pdf" target="_blank">Curriculum Vitae</a>
+						</p>
+					</div>
+				</div>
+
+				<!-- Navigation buttons. Each href="#something" opens the card with id="something" -->
+				<nav>
+					<ul>
+						<li><a href="#about">About Me</a></li>
+						<li><a href="#research">Research</a></li>
+						<li><a href="#presentations">Presentations</a></li>
+						<li><a href="#outreach">Outreach</a></li>
+						<li><a href="#blog">Blog</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- ===================== CARDS ===================== -->
+			<div id="main">
+
+				<!-- ---------- ABOUT ME ---------- -->
+				<article id="about">
+					<h2 class="major">About Me</h2>
+					<span class="image main">
+						<img src="images/telescope.jpg" alt="Telescope" />
+					</span>
+
+					<p>
+						I am a PhD candidate in Planetary Sciences at the University of Arizona's Lunar and
+						Planetary Laboratory, working with Tyler D. Robinson. My research asks how NASA's proposed
+						Habitable Worlds Observatory could find Earth-like exoplanets and detect the molecules in
+						their atmospheres, combining mission yield simulations with models of how planets reflect light.
+					</p>
+
+					<p>
+						<b>Education</b><br>
+						Ph.D. in Planetary Sciences, Minor in Astrobiology<br>
+						University of Arizona (expected 2028) &middot; Advisor: Tyler D. Robinson<br>
+						<br>
+						M.S. in Planetary Sciences<br>
+						University of Arizona (2025) &middot; Advisor: Tyler D. Robinson<br>
+						<br>
+						B.S. in Earth and Space Exploration (Astrobiology and Biogeosciences), Minor in Biological Sciences<br>
+						Arizona State University (2022) &middot; Advisor: Sara Imari Walker
+					</p>
+
+					<p>
+						<b>Research Interests</b><br>
+						Extrasolar Planets &middot; Exoplanet Yield Modeling &middot; Habitable Worlds Observatory &middot;
+						Astrobiology &middot; Planetary Atmospheres
+					</p>
+
+					<p>
+						<b>Publications:</b>
+						<a href="https://scholar.google.com/citations?hl=en&user=GYb3eisAAAAJ" target="_blank">Google Scholar</a>
+					</p>
+				</article>
+
+				<!-- ---------- RESEARCH ---------- -->
+				<!-- Each paper is one "project-row". Copy a whole row (from <div class="project-row"> to its
+				     closing </div>) to add a new paper. To add an image to a paper, copy the
+				     <div class="project-image"> block from the "False Positives" entry. -->
+				<article id="research">
+					<h2 class="major">Research</h2>
+
+					<h3 style="margin-bottom: 2rem;">Dissertation Work</h3>
+
+					<div class="project-row">
+						<div class="project-content">
+							<h3>The Impact of Planetary Phase Functions on Exo-Earth Detectability with EXOSIMS</h3>
+							<p>
+								Most mission yield studies assume planets scatter light like an idealized
+								(Lambertian) sphere. I replace that assumption with realistic, observationally motivated
+								Earth phase functions and show how it changes which exo-Earths a Habitable Worlds
+								Observatory&ndash;like mission can detect and characterize.<br>
+								<i>Foote et al. (2026), The Astrophysical Journal, accepted</i>
+								<!-- Add the DOI or arXiv link here, e.g. <a href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank">arXiv</a> -->
+							</p>
 						</div>
-						<!-- This is the navigation menu -->
-						<nav>
-							<!-- This element makes an "Unordered List" -->
-							<ul>
-								<!-- This is a "List Item" -->
-								<li>
-									<!-- 	Note that this links to #about, which will move the page to wherever
-										the element with the id "about" exists.
-									-->
-									<a href="#about">About Me</a>
-								</li>
-								<li>
-									<a href="#research">Research</a>
-								</li>
-								<li>
-									<a href="#presentations">Presentations</a>
-								</li>
-								<li>
-									<a href="#outreach">Outreach</a>
-								</li>
-								<li>
-									<a href="#blog">Blog</a>
-								</li>
-								<li>
-									<a href="#contact">Contact</a>
-								</li>
-								<!-- 	You can add another button to your navigation menu by adding
-									another List Item with a link inside of it.
-								-->
-						
-							</ul>
-						</nav>
-					</header>
+					</div>
 
-					<!-- These are the "cards" that appear when you click the buttons on the main page -->
-					<div id="main">
-						<!-- 	Here is the "About Me" card. Note it has the id "about", which the previous 
-							button links to.
-						-->
-						<article id="about">
-							<h2 class="major">About Me</h2>
-							<!-- Here is an image that you can customize for this page -->
-							<span class="image main">
-								<img src="images/telescope.jpg" alt=""/>
-							</span>
-							<!-- Here are three paragraphs where you can fill out information about yourself -->
+					<hr />
+
+					<div class="project-row">
+						<div class="project-content">
+							<h3>From Exo-Earth Detection to Atmospheric Characterization: Enabling Phase-Dependent Molecular Detection SNR in EXOSIMS</h3>
 							<p>
-								<!-- Items contained in <b> tags are bolded! -->
-								<b>Education:</b><br>
-								Ph.D. in Planetary Sciences, Minor in Astrobiology - University of Arizona (Expected 2028)<br>
-								Advisor: Tyler D. Robinson <br>
-
-								<br>
-								
-								M.S. in Planetary Sciences - University of Arizona (2025)<br>
-								Advisor Tyler D. Robinson <br>
-									
-								<br>
-								
-								B.S. in Earth and Space Exploration (Astrobiology and Biogeosciences), Minor in Biological Sciences - Arizona State University (2022)<br>
-								Advisor: Sara Imari Walker
-
+								Building molecular detection directly into mission simulations: instead of one fixed
+								signal-to-noise target, the required SNR for detecting O<sub>2</sub> and H<sub>2</sub>O
+								changes with the planet's orbital phase.<br>
+								<i>Foote et al. (2026), arXiv preprint</i>
+								<!-- Add the arXiv link here, e.g. <a href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank">arXiv</a> -->
 							</p>
+						</div>
+					</div>
+
+					<hr />
+
+					<div class="project-row">
+						<div class="project-content">
+							<h3>Detecting Methane and Carbon Dioxide on Earth Through Time</h3>
 							<p>
-								<b>Research Interests:</b> Extrasolar Planets, Exoplanet Yield Modeling, Habitable Worlds Observatory, Astrobiology, Planetary Atmospheres
-							<!--</p>
-							<p>
-							   								
-								<b>Publications:</b> <a href="https://scholar.google.com/citations?hl=en&user=GYb3eisAAAAJ&view_op=list_works&gmla=APjjwuZbwsPnkAiNlowXHhC6zfx_-tG0oRiA_QFaHwQtGFoiT87mh1fw5U9IKmUjUuh6wQLYAYIg8pkInp6hnpPf" /a>Google Scholar
-							</p> -->
-						</article>
-
-						<!-- Here is the "Research" card. -->
-						<article id="research">
-						    <h2 class="major">Research</h2>
-						
-						    <div class="project-row">
-						      <!--  <div class="project-image">
-						            <span class="image">
-						                <img src="images/fomalhautcs2.png" alt="Project 1 Image" />
-						            </span>
-						        </div> -->
-						        <div class="project-content">
-						            <h3>A New Era in Exoplanet Characterization with the Habitable Worlds Observatory: Improving Parameters for Better Mission Yields</h3>
-						            <p>
-						                <br>
-						                Foote et al. (2026), In Prep
-						            </p>
-						        </div>
-						    </div>
-						
-						    <hr />
-						
-						    <div class="project-row">
-						        <div class="project-image">
-						            <span class="image">
-						                <img src="images/Paper2.jpg" alt="Project 2 Image" />
-						            </span>
-						        </div>
-						        <div class="project-content">
-						            <h3>False Positives and the Challenge of Testing the Alien Hypothesis</h3>
-						            <p>
-						    			 <br>
-										
-						                <a href="https://doi.org/10.1089/ast.2023.0005">Link to Foote et al. (2023)</a>
-							   <!-- <div class="project-row">
-						        <div class="project-image">
-						            <span class="image">
-						                <img src="images/Beta-Pic-Gallery.png" alt="Project 2 Image" />  -->
-						            </span>
-						        </div>
-						        <div class="project-content">
-						            <h3>Technosignatures as a Priority in Planetary Science</h3>
-						            <p>
-						    			 <br>
-										
-						                <a href="https://baas.aas.org/pub/2021n4i427/release/1">Link to Sheikh et al. (2021)</a>
-						            </p>
-						        </div>
-						    </div>
-						
-						</article>
-						<!-- Here is the "Community" card. -->
-						<article id="community">
-							<h2 class="major">Community</h2>
-							<span class="image main">
-								<img src="images/unistellar.png" alt=""/>
-							</span>
-
-							<span class="image main">
-								<img src="images/Unistellar-transit.png" alt=""/>
-							</span>
-							<p>
-								<b>Teaching:</b> <br>
-
-								Graduate Teaching Assistant - University of Arizona <br> ASTR/PTYS 206: Exploring Our Solar System <br>
-
-								<br>Undergraduate Student Instructor - University of California, Berkeley <br> ASTRON C10: Introduction to General Astronomy <br>
-
-								
+								Extending the phase-dependent framework to CH<sub>4</sub> and CO<sub>2</sub> in Archean
+								and Proterozoic Earth atmospheres, to predict how well the Habitable Worlds Observatory
+								could characterize planets resembling earlier stages of Earth's history.<br>
+								<i>Foote et al., in prep</i>
 							</p>
+						</div>
+					</div>
+
+					<hr />
+
+					<h3 style="margin-bottom: 2rem;">Other Work</h3>
+
+					<div class="project-row">
+						<div class="project-content">
+							<h3>A New Era in Exoplanet Characterization with the Habitable Worlds Observatory: Improving Parameters for Better Mission Yields</h3>
+							<p><i>Foote et al. (2026), in prep</i></p>
+						</div>
+					</div>
+
+					<hr />
+
+					<div class="project-row">
+						<div class="project-image">
+							<span class="image">
+								<img src="images/Paper2.jpg" alt="Figure from Foote et al. (2023)" />
+							</span>
+						</div>
+						<div class="project-content">
+							<h3>False Positives and the Challenge of Testing the Alien Hypothesis</h3>
 							<p>
-								<b>Outreach:</b> <br>
-
-								Data Analyst - Unistellar (2021-2022) <br><br>
-
-								I worked on the exoplanet transit team at Unistellar conducting data reduction and reduction pipeline development for citizen astronomers observing transits with their eVscopes.  
+								<i>Foote et al. (2023), Astrobiology</i> &middot;
+								<a href="https://doi.org/10.1089/ast.2023.0005" target="_blank">Read the paper</a>
 							</p>
-		
-						</article>
+						</div>
+					</div>
 
-						<!-- Here is a the "Contact" card. -->
-						<article id="contact">
-							<article id="contact">
-  <h2 class="major">Contact</h2>
+					<hr />
 
-  <p>
-    <b>Email:</b> sfoote@arizona.edu<br>
+					<div class="project-row">
+						<div class="project-content">
+							<h3>Technosignatures as a Priority in Planetary Science</h3>
+							<p>
+								<i>Sheikh et al. (2021), BAAS</i> &middot;
+								<a href="https://baas.aas.org/pub/2021n4i427/release/1" target="_blank">Read the paper</a>
+							</p>
+						</div>
+					</div>
+				</article>
 
-    <b>LinkedIn</b>
-    <a href="https://www.linkedin.com/in/searrafoote" target="_blank">
-    </a><br>
+				<!-- ---------- PRESENTATIONS ---------- -->
+				<!-- To hide this card until it has content, delete the Presentations <li> in the nav above. -->
+				<article id="presentations">
+					<h2 class="major">Presentations</h2>
+					<!-- Example entry:
+					<p>
+						<b>Talk title</b><br>
+						Conference name, City (Month Year)
+					</p>
+					-->
+					<p>Coming soon.</p>
+				</article>
 
-    <b>Research Group Website</b>
-    <a href="https://hablabnet.wordpress.com/" target="_blank">
+				<!-- ---------- TEACHING & OUTREACH ---------- -->
+				<article id="outreach">
+					<h2 class="major">Teaching &amp; Outreach</h2>
+					<span class="image main">
+						<img src="images/unistellar.png" alt="Unistellar eVscope" />
+					</span>
 
-    </a>
-  </p>
-</article>
+					<p>
+						<b>Teaching</b><br>
+						Graduate Teaching Assistant, University of Arizona<br>
+						ASTR/PTYS 206: Exploring Our Solar System<br>
+						<br>
+						Undergraduate Student Instructor, University of California, Berkeley<br>
+						ASTRON C10: Introduction to General Astronomy
+					</p>
 
-		
+					<p>
+						<b>Outreach</b><br>
+						Data Analyst, Unistellar (2021&ndash;2022)<br>
+						I worked on Unistellar's exoplanet transit team, doing data reduction and developing the
+						reduction pipeline for citizen astronomers observing transits with their eVscopes.
+					</p>
 
-							<!-- 	Here are the fancy icons that link to your social media.
-								These icons are rendered using Font Awesome fonts, and you can find more icons
-								here: https://fontawesome.com/icons
-							
-							<ul class="icons">
-								
+					<span class="image main">
+						<img src="images/Unistellar-transit.png" alt="Exoplanet transit light curve from Unistellar observations" />
+					</span>
+				</article>
 
-								<li>
-									<a href="https://www.linkedin.com/in/searrafoote/" class="icon fa-linkedin">
-										<span class="label">LinkedIn</span>
-									</a>
-								</li>
-								<!-- 	We can add a new icon by searching on the Font Awesome website
-									for the correct class name and inserting it as a new list item.
+				<!-- ---------- BLOG ---------- -->
+				<!-- To hide this card until it has content, delete the Blog <li> in the nav above. -->
+				<article id="blog">
+					<h2 class="major">Blog</h2>
+					<p>Coming soon.</p>
+				</article>
 
-									We found "envelope" here: https://fontawesome.com/icons/envelope
-								-->
-								<!-- <li>
-									<a href="sfoote@arizona.edu" class="icon fa-envelope">
-										<span class="label">Email</span>
-									</a>
-								</li> -->
-						<!--	</ul>
-						</article>
-					</div> -->
+				<!-- ---------- CONTACT ---------- -->
+				<article id="contact">
+					<h2 class="major">Contact</h2>
+					<p>
+						<b>Email:</b> <a href="mailto:sfoote@arizona.edu">sfoote@arizona.edu</a><br>
+						<b>Research Group:</b> <a href="https://hablabnet.wordpress.com/" target="_blank">HABLab</a>
+					</p>
 
-					<!-- This is the footer that appears at the bottom of the page -->
-					<footer id="footer">
-						<!-- 	You can change "Untitled" to your name to show everyone that
-							this is your work.
-						-->
-					</footer>
+					<!-- Icon links. Find more icons at https://fontawesome.com/v4/icons/ (this template uses version 4) -->
+					<ul class="icons">
+						<li>
+							<a href="mailto:sfoote@arizona.edu" class="icon fa-envelope">
+								<span class="label">Email</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/searrafoote/" class="icon fa-linkedin" target="_blank">
+								<span class="label">LinkedIn</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://scholar.google.com/citations?hl=en&user=GYb3eisAAAAJ" class="icon fa-graduation-cap" target="_blank">
+								<span class="label">Google Scholar</span>
+							</a>
+						</li>
+						<li>
+							<a href="images/SearraFooteCV.pdf" class="icon fa-file-text" target="_blank">
+								<span class="label">CV</span>
+							</a>
+						</li>
+					</ul>
+				</article>
 
 			</div>
 
-			<!--	This is the background image of the site.
-				All configuration of the background is done with CSS.
-				Look in the file assets/css/main.css and search for "#bg" to
-				see how this element is styled. Look for comments pointing 
-				to where you can set a new background image.
-			-->
-			<div id="bg"></div>
+			<!-- ===================== FOOTER ===================== -->
+			<footer id="footer">
+				<p class="copyright">&copy; Searra Foote &middot; Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></p>
+			</footer>
 
-			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		</div>
+
+		<!-- Background image (set in assets/css/main.css under #bg:after) -->
+		<div id="bg"></div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
